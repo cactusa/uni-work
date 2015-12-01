@@ -1,0 +1,118 @@
+/* Layout */
+html{
+	height: 100%;
+	-webkit-box-shadow: inset 0px 0px 50px 10px rgba(0, 0, 0, 1);
+        
+        	box-shadow: inset 0px 0px 50px 10px rgba(0, 0, 0, 1);
+}
+body{
+	background: url(rubber_grip.png);
+}
+#wrapper {
+width: 450px;
+text-align: center;
+margin: 40px auto;
+padding: 0px;
+}
+.group:after{
+visibility: hidden;
+display: block;
+content: "";
+clear: both;
+height: 0;
+}
+* html .group { zoom: 1; }
+/* IE6 */
+*:first-child+html .group { zoom: 1; } 
+/* IE7 */
+.boxleft, .boxright {
+	padding: 60px 0px;
+	margin: 5px 0px;
+	width: 220px;
+	border-radius: 15%;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-chrome-transition: all 1s;
+	-o-transition: all 1s;
+	opacity: 0.8;
+}
+.boxleft {
+	float: left;
+	background-color: #D9D9F2;
+}
+.boxright {
+	float: right;
+	background-color: #FCD28F;
+}
+a.boxleft:hover, a.boxright:hover{
+	background-color: #FFDF7F;
+	border-radius: 50%;
+	opacity: 1;
+}
+/* Text */
+
+a{
+text-decoration:none;
+font-family: Arial, Helvetica, sans-serif;
+color: #666;
+font-size: 16px;
+font-weight: bold;
+}
+h1, h2{
+font-family: 'Monofett', cursive;
+width: 500px;
+margin: 0px auto;
+padding: 0px 5px 9px 5px;
+border-radius: 25px;
+}
+h1{
+text-align: center;
+font-size: 50px;
+margin-top: 20px;
+color: #FCD28F;
+border-top: 3px solid white;
+border-left: 3px solid white;
+border-right: 3px solid white;
+letter-spacing: 0.03em;
+}
+h2{
+text-align: center;
+font-size: 34px;
+margin-top: 10px;
+color: #D9D9F2;
+border-bottom: 1px solid white;
+border-left: 3px solid white;
+border-right: 3px solid white;
+}
+ul{
+	text-align: center;
+	width: 500px;
+	margin: 0px auto;
+	padding-bottom: 9px;
+	border-radius: 25px;
+	-moz-border-radius:25px;
+	border: 3px solid white;
+	margin-bottom: 20px;
+}
+li{
+
+}
+li.footer{
+	font-family: 'Monofett', cursive;
+	font-size: 25px;
+	color: #FCD28F;
+	letter-spacing: 0.05em;
+}
+li.footer:nth-child(2n){
+	color: #D9D9F2;
+}
+.footer a{
+	color: inherit;
+	font-family: inherit;
+	font-size: 43px;
+	letter-spacing: inherit;
+}
+.footer a:hover{
+	color: #6D9D3C;
+}

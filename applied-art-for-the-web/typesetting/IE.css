@@ -1,0 +1,9 @@
+h1{
+	color: #FDEB6F;
+}
+.buttonleft, .bottonright{
+	padding-top: 10px;
+}
+.buttonleft:hover, .bottonright:hover{
+	box-shadow: 0 0px 5px 0px #333, 0 0 15px 0px #6CF;
+}

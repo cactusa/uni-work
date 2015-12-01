@@ -1,0 +1,213 @@
+/*
+Theme Name:     Hatch Child
+Template:       hatch
+*/
+
+@import url("../hatch/style.css");
+
+  /****************************/
+ /* Vlad's code starts here */
+/**************************/
+
+/*Font Import*/
+@font-face
+{
+	font-family: oratorstd;
+	src: url('fonts/OratorStd.otf');
+}
+@font-face
+{
+	font-family: dinprolight;
+	src: url('fonts/DINPro-Light.otf');
+}
+body{
+	font: 0.75em/1.75em 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	font-family: dinprolight, sans-serif !important;
+}
+#header{
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 35px 0px;
+	border-bottom: 1px solid #bbb;
+}
+#header img:hover{
+	opacity: .3;
+	-webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+#header-banner{
+	width: auto;
+	float: none;
+}
+#menu-primary{
+	position: static;
+	display: inline-block;
+	float: none;
+	margin-top: 70px;
+}
+#menu-primary li a{
+	font-family: oratorstd, sans-serif;
+	font-size: 1.4em;
+	line-height: 1.8em;
+	text-transform: uppercase;
+	color: #333;
+	padding-top: 6px;
+}
+#menu-primary li.current-menu-item a {
+	color: #333;
+	background: url("img/bar.png") repeat-x 0% 0%;
+}
+#menu-primary li a:hover{
+	background: url("img/bar2.png") repeat-x 0% 0%;
+	color: #bbb !important;
+	-webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+.translation{
+	color: #333;
+	text-transform: uppercase;
+	float: right;
+	margin: 5px 0 0 0;
+}
+.translation a:hover{
+	color: #bbb;
+}
+#sidebar-primary {
+	float: left;
+	width: 100%;
+}
+#sidebar-primary a:hover{
+	color: #bbb;
+}
+.widget_breadcrumb_navxt{
+	font-size: 1.3em;
+	font-family: oratorstd, sans-serif;
+	text-transform: uppercase;
+}
+.singular-page #content{
+	width: 100%;
+}
+#footer{
+	border-top: 1px solid #bbb;
+	padding-top: 35px;
+
+	font-family: oratorstd, sans-serif;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+#footer p {
+	float: right;
+	font-family: oratorstd, sans-serif;
+	font-size: 1.0em;
+	text-transform: uppercase;
+	color: #333;
+}
+#footer a{
+	color: #333;
+}
+#footer a:hover {
+	text-decoration: none !important;
+	color: #bbb !important;
+}
+#footer dl{
+	float: left;
+	width: 300px;
+	margin: 0 0 0 0;
+}
+#footer dt, #footer dd{
+	font-family: oratorstd, sans-serif;
+}
+#footer dt{
+	font-size: 1.5em;
+}
+#footer dd{
+	font-size: 1.2em;
+	margin: 0 0 5px 0px;
+}
+.headertitle{
+	font-family: oratorstd, sans-serif;
+	font-size: 1em;
+	text-transform: uppercase;
+	color: #333;
+
+	margin: 0px;
+	padding: 0 0 15px 16px !important;
+	border-top: 1px solid #bbb;
+}
+.contenttext{
+	font-family: dinprolight, sans-serif;
+	color: #555;
+
+	-moz-column-count: 2;
+	-moz-column-gap: 50px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 50px;
+	column-count: 2;
+	column-gap: 50px;
+
+	margin-bottom: 50px;
+}
+.contenttextportfolio{
+	font-family: dinprolight, sans-serif;
+	color: #555;
+	margin-bottom: 50px;
+
+	-moz-column-count: 3;
+	-moz-column-gap: 10px;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 10px;
+	column-count: 3;
+	column-gap: 10px;
+}
+.contenttext a:hover, .contenttextportfolio a:hover, .colomat-hover{
+	color: #bbb;
+	text-decoration: none !important;
+	-webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+.hentry{
+	font-size: 1.3em;
+}
+a.srp-widget-title-link:hover{
+	color: #bbb;
+}
+.srp-widget-container .widget-title{
+	display: none !important;
+}
+.srp-widget-excerpt a:hover{
+	color: #bbb;
+}
+
+.scial a {
+	background-image: 		url(img/sprite.png);
+}
+
+.social a:link {	
+	background-image:		url(img/sprite.png);
+	background-position:	0% 0%;
+	background-repeat:		no-repeat;
+	display: block;
+	width: 40px;
+	height: 40px;
+
+	-webkit-transition: all 0 ease 0;
+	-moz-transition: all 0 ease 0;
+	-ms-transition: all 0 ease 0;
+	-o-transition: all 0 ease 0;
+	transition: all 0 ease 0;
+}
+.social a:visited {
+
+}
+.social #twitter a:hover {
+	background-image:		url(img/sprite.png);
+	background-position:	0% 100%;
+}

@@ -1,0 +1,101 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800);
+body{
+background: url("../images/skull-non-transparent.jpg") 50% 0% no-repeat black;
+}
+#wrapper{
+width: 90%;
+margin: 0px auto;
+
+overflow: hidden;
+}
+#maintitle{
+display: block;
+width: 90%;
+margin: 170px auto 0px auto;
+height: 114px;
+
+background-image: url("../images/title.png");
+background-position: 50% 0%;
+background-repeat: no-repeat;
+/*Image replacement*/
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
+}
+#date{
+width: 198px;
+height: 45px;
+margin: 30px auto 0px auto;
+background-image: url("../images/date.png");
+background-position: 0% 0%;
+background-repeat: no-repeat;
+text-indent: -9999px;
+}
+#jaw{
+width: 261px;
+height: 489px;
+margin: 330px auto 0px auto;
+padding: 30px 60px 0px 50px;
+background-image: url("../images/jaw.png");
+background-position: 0% 100%;
+background-repeat: no-repeat;
+color: #ccc;
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 18px;
+line-height: 25px;
+}
+#jaw dt{
+width: 80px;
+float: left;
+}
+#jaw dd{
+margin-left: 80px;
+}
+.navigationleft{
+display: block;
+width: 223px;
+height: 140px;
+margin: 0px auto;
+background-image: url("../images/time-and-place.png");
+background-position: 0% 0%;
+background-repeat: no-repeat;
+position: fixed;
+left: 20px;
+top: 350px;
+padding-top: 30px;
+text-decoration: none;
+text-align: center;
+text-indent: -9999px;
+}
+.navigationright{
+display: block;
+width: 220px;
+height: 169px;
+margin: 0px auto;
+background-image: url("../images/film-details.png");
+background-position: 0% 0%;
+background-repeat: no-repeat;
+position: fixed;
+right: 20px;
+top: 350px;
+padding-top: 30px;
+text-decoration: none;
+text-align: center;
+text-indent: -9999px;
+}
+
+#footer{
+width: 90%;
+margin: 10px auto;
+text-align: center;
+}
+#footer li{
+margin: 0px 10px;
+display: inline;
+color: #92282b;
+letter-spacing: 1px;
+font-family: 'Dosis', sans-serif;
+}
+a{
+color: #92282b;
+}

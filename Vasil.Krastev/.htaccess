@@ -1,0 +1,7 @@
+
+
+AuthType basic
+AuthUserFile "/home/sites/vladthecactus.me.uk/public_html/Vasil.Krastev/.htpasswd"
+AuthGroupFile /dev/null
+AuthName "Secure directory"
+Require valid-user

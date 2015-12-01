@@ -1,0 +1,346 @@
+/* Layout */
+#wrapper{
+width: 960px;
+margin: 0px auto;
+}
+#content{
+width: 960px;
+min-height: 400px;
+background-color: white;
+border-radius: 10px;
+margin: 10px 0;
+clear: both;
+box-shadow: 0px 0px 5px #555;
+-moz-box-shadow: 0px 0px 5px #555;
+-webkit-box-shadow: 0px 0px 5px #555;
+-o-box-shadow: 0px 0px 5px #555;
+overflow: hidden;
+padding-bottom: 20px;
+}
+.group:after{
+visibility: hidden;
+display: block;
+content: "";
+clear: both;
+height: 0;
+}
+* html .group { zoom: 1; }
+/* IE6 */
+*:first-child+html .group { zoom: 1; } 
+/* IE7 */
+#footer{
+width: 960px;
+height: 30px;
+padding-top: 10px;
+background-color: white;
+border-radius: 10px;
+margin: 10px auto;
+box-shadow: 0px 0px 5px #555;
+-moz-box-shadow: 0px 0px 5px #555;
+-webkit-box-shadow: 0px 0px 5px #555;
+-o-box-shadow: 0px 0px 5px #555;
+clear: both;
+}
+/* End Layout*/
+
+/* General */
+body{
+background-color: #BEB6AE;
+}
+a{
+text-decoration: none;
+}
+/* End General*/
+
+/* Logo and Title */
+h1 a{
+display: block;
+width: 500px;
+height: 70px;
+margin: 10px 0 5px 0;
+padding: 25px 0 0 155px;
+font-size: 50px;
+color: white;
+text-shadow: 0 0 5px #555;
+background-image: url("images/logo.png");
+background-position: 1% 0%;
+background-repeat: no-repeat;
+background-size: contain;
+float: left;
+}
+/* End Logo and Title */
+
+/* Opening hours */
+#times{
+margin: 21px 0 0 0;
+padding: 0 5px 5px 5px;
+color: #b11427;
+font-family: 'Century Gothic', sans-serif;
+font-size: 18px;
+float: right;
+border: 2px dotted #758485;
+border-radius: 10px;
+}
+#times li{
+margin-top:3px;
+}
+/* End Opening Hours*/
+
+/* Navigation */
+.navigation{
+width: 960px;
+margin: 0 auto 0 auto;
+text-align: center;
+overflow: hidden;
+background-color: #758485;
+border-radius: 10px;
+box-shadow: 0px 0px 5px #555;
+-moz-box-shadow: 0px 0px 5px #555;
+-webkit-box-shadow: 0px 0px 5px #555;
+-o-box-shadow: 0px 0px 5px #555;
+clear: both;
+}
+.navigation > li{
+float: left;
+}
+.navigation > li > a{
+display: block;
+width: 240px;
+background-color: white;
+border-radius: 10px;
+padding: 7px 0px;
+margin: 5px 0px;
+font-size: 20px;
+color: #5B483B;
+}
+.navigation > li > a.currentpage {
+color: #b11427;
+}
+.navigation > li > a:hover{
+background-color: #F9CDD2;
+}
+/* End Navigation */
+
+/* Content and filling */
+#content{
+line-height: 20px;
+}
+.findustext{
+width: 500px;
+float: left;
+}
+#content h2{
+margin: 0px 0 15px 25px;
+color: #b11427;
+font-family: 'Century Gothic', sans-serif;
+font-size: 35px;
+line-height: 40px;
+}
+#content h3{
+margin: 30px 0 15px 25px;
+color: #b11427;
+font-family: 'Century Gothic', sans-serif;
+font-size: 25px;
+}
+p{
+margin: 0 25px 10px 25px;
+font-size: 17px;
+color: #5B483B;
+text-align: justify;
+line-height: 1.4em;
+}
+#content dl{
+margin: 30px 0 15px 25px;
+}
+#content dl dt{
+color: #b11427;
+font-family: 'Century Gothic', sans-serif;
+font-size: 25px;
+margin-bottom: 20px;
+}
+#content dl dd{
+background-image: url("images/bean.png");
+background-repeat: no-repeat;
+padding-left: 25px;
+font-size: 17px;
+color: #5B483B;
+text-align: justify;
+padding-bottom: 10px;
+line-height: 1.4em;
+}
+.aboutustext{
+float: left;
+width: 545px;
+}
+.aboutustext dl{
+width: 490px;
+}
+#content img{
+float: right;
+margin: 90px 25px 0px 0px;
+border: 2px solid #758485;
+}
+.findustext > a{
+display: block;
+float: left;
+width: 40px;
+height: 60px;
+background-size: cover;
+background-image: url("images/take-out-coffee-cup-social-icons.jpg");
+background-repeat: no-repeat;
+margin: 20px 0 20px 25px;
+}
+.findustext > dl{
+clear: both;
+}
+.facebook{
+background-position: 0% 0%;
+}
+.twitter{
+background-position: 50% 0%;
+}
+.googleplus{
+background-position: 100% 0%;
+}
+
+	/* offer*/
+.offer{
+margin: 40px auto 40px auto;
+padding-left: 310px;
+width: 480px;
+height: 320px;
+border-right: 4px solid #758485;
+background-image: url("images/latte.jpg");
+background-repeat: no-repeat;
+background-size: contain;
+border-radius: 10px;
+}
+.offer h3,h2{
+padding: 30px 0 0 0;
+
+}
+.comingsoon{
+margin: 40px auto 20px auto;
+padding-right: 330px;
+width: 460px;
+height: 320px;
+border-left: 4px solid #758485;
+background-image: url("images/christmas-coffee.jpg");
+background-repeat: no-repeat;
+background-size: contain;
+background-position: 100% 0%;
+border-radius: 10px;
+}
+.comingsoon h3,h2{
+padding: 30px 0 0 0;
+line-height: 1.2em;
+}
+	/* end offer*/
+	
+	/* menu*/
+.coffeelist, .tealist, .foodlist{
+width: 285px;
+background-repeat: no-repeat;
+padding-top: 210px;
+border-bottom: 2px dotted #758485;
+border-right: 2px dotted #758485;
+border-radius: 10px;
+background-position: 0% 1%;
+float: left;
+}
+.coffeelist{
+background-image: url("images/coffee.jpg");
+}
+.tealist{
+background-image: url("images/tea.jpg");
+}
+.foodlist{
+background-image: url("images/sandwich.jpg");
+}
+	/* end menu*/
+	
+	/* feedback quote */
+.quote{
+width: 350px;
+float: right;
+margin: 10px 25px 20px 25px;
+padding: 28px 8px 8px 28px;
+font-size: 19px;
+color: #5B483B;
+text-align: justify;
+background-image: url("images/quote.png");
+background-repeat: no-repeat;
+border-bottom: 2px dotted #758485;
+border-right: 2px dotted #758485;
+border-radius: 10px;
+}
+.author{
+font-size: 19px;
+font-style: italic;
+float: right;
+color: #b11427;
+}
+	/* end feedback quote */
+	
+	/*feedback form*/
+#content form{
+float: left;
+margin: 15px 25px;
+padding: 10px;
+width: 350px;
+color: #5B483B;
+font-size: 18px;
+}
+#content textarea{
+resize: vertical;
+}
+#content form input,textarea{
+color: #b11427;
+font-family: 'Century Gothic', sans-serif;
+}
+#content form input{
+margin-bottom: 5px;
+}
+	/*end feedback form*/
+/* End Content and filling */
+
+/* Footer*/
+#footer{
+text-align: center;
+}
+#footer li{
+display: inline;
+margin: 0px 10px;
+color: #5B483B;
+}
+#footer a{
+color: #5B483B;
+text-decoration: underline;
+}
+/* End Footer*/
+
+/* Google Maps and button */
+iframe{
+float: right;
+margin: 30px 25px 0 0;
+border: 2px solid #758485;
+width: 425px;
+height: 350px;
+}
+a.mapbutton{
+text-align: center;
+display: block;
+width: 240px;
+background-color: #758485;
+border-radius: 10px;
+padding: 7px 0px;
+margin: 10px 110px;
+font-size: 20px;
+color: white;
+float: right;
+}
+a.mapbutton:hover{
+color: #FDF09E;
+color: #F9CDD2;
+}
+/* End Google Maps and button */

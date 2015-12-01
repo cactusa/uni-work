@@ -1,0 +1,11 @@
+@font-face
+{
+	font-family: HUMANIST;
+	src: url('HUMANIST.TTF');
+}
+@font-face
+{
+	font-family: HUMANIST;
+	font-weight: bold;
+	src: url('HUMANISTBOLD.TTF');
+}

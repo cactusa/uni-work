@@ -1,0 +1,387 @@
+/* CSS imports */
+@import url(group.css);
+@import url(fonts.css);
+
+
+
+
+/* Defaults */
+*{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+html, body {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	min-height: 100%;
+	
+	font-family: HUMANIST, Arial, Helvetica, sans-serif;
+}
+/* End Defaults */
+
+
+
+html{
+	/* CSS3 Gradients */
+	background: rgb(161,219,255); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ExZGJmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUzJSIgc3RvcC1jb2xvcj0iI2NiZWJmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMGY5ZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(161,219,255,1) 0%, rgba(203,235,255,1) 53%, rgba(240,249,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(161,219,255,1)), color-stop(53%,rgba(203,235,255,1)), color-stop(100%,rgba(240,249,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(161,219,255,1) 0%,rgba(203,235,255,1) 53%,rgba(240,249,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(161,219,255,1) 0%,rgba(203,235,255,1) 53%,rgba(240,249,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(161,219,255,1) 0%,rgba(203,235,255,1) 53%,rgba(240,249,255,1) 100%); /* IE10+ */
+	background: linear-gradient(top,  rgba(161,219,255,1) 0%,rgba(203,235,255,1) 53%,rgba(240,249,255,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1dbff', endColorstr='#f0f9ff',GradientType=0 ); /* IE6-8 */
+}
+
+body{
+	background: url(../img/cloud-long.png) 95% 15% no-repeat, 
+	url(../img/cloud-fat.png) 5% 50% no-repeat,
+	url(../img/sun.png) -250px -250px no-repeat;
+}
+#wrapper{
+	max-width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+#wrapper2{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+
+
+
+/* Navigation */
+nav{
+	float: right;
+}
+nav li{
+	position: relative;
+	display: inline-block;
+	margin: -60px -35px -20px -35px;
+}
+nav a{
+	font-family: HUMANIST, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #FFF;
+	padding: 30px 30px 30px 30px;
+}
+#active{
+	background: url(../img/buttonpressed1.png) 0 0 no-repeat;
+}
+.button1{
+	padding: 100px 45px 175px 45px;
+	background: url(../img/button1.png) 0 0 no-repeat;
+	z-index: 2;
+}
+.button1:hover{
+	background: url(../img/buttonhover.png) 0 0 no-repeat;
+}
+.button2{
+	padding: 100px 45px 175px 45px;
+	background: url(../img/button1.png) 0 0 no-repeat;
+	top: -20px;
+	z-index: 1;
+}
+.button2:hover{
+	background: url(../img/buttonhover.png) 0 0 no-repeat;
+}
+.button3{
+	padding: 100px 45px 175px 45px;
+	background: url(../img/button1.png) 0 0 no-repeat;
+	z-index: 2;
+}
+.button3:hover{
+	background: url(../img/buttonhover.png) 0 0 no-repeat;
+}
+.button4{
+	padding: 100px 45px 175px 45px;
+	background: url(../img/button1.png) 0 0 no-repeat;
+	top: -30px;
+	z-index: 1;
+}
+.button4:hover{
+	background: url(../img/buttonhover.png) 0 0 no-repeat;
+}
+.button5{
+	padding: 100px 45px 175px 45px;
+	background: url(../img/button1.png) 0 0 no-repeat;
+	top: -20px;
+	z-index: 0;
+}
+.button5:hover{
+	background: url(../img/buttonhover.png) 0 0 no-repeat;
+}
+.button6{
+	padding: 100px 45px 175px 45px;
+	background: url(../img/button1.png) 0 0 no-repeat;
+	top: -15px;
+	z-index: 1;
+	
+	margin-right: -15px;
+}
+.button6:hover{
+	background: url(../img/buttonhover.png) 0 0 no-repeat;
+}
+/*End Navigation*/
+
+
+
+
+/* Branding */
+#logo{
+	display: block;
+	width: 134px;
+	padding-top: 173px;
+	background: url(../img/cactus-logo.png) no-repeat;
+	
+	color: #669933;
+	text-decoration: none;
+	font-family: HUMANIST, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 1.2em;
+	float: left;
+}
+/* End Branding */
+
+
+
+/* Sidebar */
+
+#sidebar{
+	position: relative;
+	float: left;
+	width: 170px;
+	border: 10px solid #598527;
+	border-radius: 90px;
+	background: #b0e179;
+	box-shadow: 0 0 100px 0 #598527 inset;
+}
+#sidebar:after{
+	position: absolute;
+	z-index: -1;
+	bottom: -10px;
+	right: -110px;
+	display: block;
+	width: 150px;
+	height: 50px;
+	content: "";
+	background-color: #45671e;
+
+	-ms-transform: rotate(30deg); /* IE 9 */
+	-webkit-transform: rotate(30deg); /* Safari and Chrome */
+	-o-transform: rotate(30deg); /* Opera */
+	-moz-transform: rotate(30deg); /* Firefox */
+	transform: rotate(30deg);
+
+		/* Undoing .group class entries*/
+		visibility: visible;
+		clear: none;
+}
+#sidebar ul{
+	padding: 10px 0;
+	text-align: center;
+}
+#sidebar a{
+	color: #333;
+}
+
+/* End Sidebar*/
+
+
+
+/* Content */
+.separator{
+	
+}
+
+/* Image Captions - CSS-tricks */
+figure{
+  	position: relative;
+  	overflow: hidden;
+	border: 1px solid #598527;
+	box-shadow: 0 0 3px 0 #598527;
+}
+.figureleft{
+	float: left;
+	margin: 10px 25px 5px 0;
+}
+.figureright{
+	float: right;
+	margin: 10px 0 5px 25px;
+}
+figcaption{
+	position: absolute;
+	background: rgba(255,255,255,0.75);
+	color: #333;
+	padding: 10px 20px;
+	
+	opacity: 0;
+	bottom: -30%;
+	left: 0;
+	-webkit-transition: all 0.6s ease;
+	-moz-transition:    all 0.6s ease;
+	-o-transition:      all 0.6s ease;
+	transition: 		all 0.6s ease;
+}
+figure:hover figcaption {
+	opacity: 1;
+	bottom: 0;
+}
+figure:before {
+	content: "?";
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	background: rgba(255,255,255,0.75);
+	color: black;
+	width: 24px;
+	height: 24px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius:    12px;
+	border-radius:         12px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 24px;
+	/* Only Fx 4 supporting transitions on psuedo elements so far... */
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: 	all 0.6s ease;
+	-o-transition: 		all 0.6s ease;
+	transition: 		all 0.6s ease;
+	opacity: 0.75;
+}
+figure:hover:before {
+  	opacity: 0;
+}
+/* End Image Captions*/
+
+#contentwrapper{
+	position: relative;
+	float: right;
+	margin: 0 auto -148px auto;
+	padding: 30px 40px 150px 40px;
+	background: url(../img/thorn1.png) 0 0 repeat-y,
+				url(../img/thorn2.png) 0 0 repeat-y,
+				url(../img/thorn1.png) 100% 0 repeat-y,
+				url(../img/thorn2.png) 100% 0 repeat-y,
+				url(../img/thorn1.png) 0 0 repeat-x,
+				url(../img/thorn2.png) 0 0 repeat-x;
+	border-top-right-radius: 220px;
+	border-top-left-radius: 220px;
+}
+#contentwrapper:before{
+	position: absolute;
+	z-index: 0;
+	top: -20px;
+	left: -20px;
+	display: block;
+	width: 179px;
+	height: 183px;
+	content: "";
+	background: url(../img/cactus-bloom-left.png) 0 0 no-repeat;
+}
+#contentwrapper:after{
+	position: absolute;
+	z-index: 1;
+	top: -40px;
+	right: -40px;
+	display: block;
+	width: 212px;
+	height: 205px;
+	content: "";
+	background: url(../img/button1.png) 0 0 no-repeat;
+	/* Undoing .group class entries*/
+		visibility: visible;
+		clear: none;
+}
+#content{
+	margin: 0 auto -148px auto;
+	padding: 40px 40px 170px 40px;
+	max-width: 700px;
+	border: 15px solid #598527;
+	border-radius: 90px;
+	background: #b0e179;
+	box-shadow: 0 0 100px 0 #598527 inset;
+	
+	color: #333;
+}
+#content h1{
+	font-family: HUMANIST, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 1.6em;
+	margin: 0 0 30px 0;
+	text-shadow: 0px 1px 0 #ffff99;
+}
+#content h2{
+	font-family: HUMANIST, Arial, Helvetica, sans-serif;
+	margin: 0 0 10px 0;
+	font-size: 1.4em;
+}
+#content p{
+	font-family: HUMANIST, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.4em;
+	margin: 15px 0;
+}
+/* End Content*/
+
+
+
+
+/* Footer */
+#dunes{
+	position: relative;
+	z-index: 0;
+	clear: both;
+	height: 150px;
+	background: url(../img/footer-dark.png) repeat-x bottom right,
+url(../img/footer-light.png) repeat-x 130px 100%;
+}
+footer{
+	margin-top: -2px;
+	background: url(../img/texture.png);
+}
+footer dl{
+	float: left;
+	color: #666;
+	padding: 40px 0 40px 80px;
+}
+footer a{
+	color: #666;
+}
+footer a:hover{
+	text-decoration: underline;
+}
+.footernav dt, .footerlinks dt, .webtech dt{
+	font-family: HUMANIST, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin: 0 0 30px 0;
+}
+.footernav dd{
+	font-family: HUMANIST, Arial, Helvetica, sans-serif;
+	float: left;
+	width: 80px;
+	line-height: 1.2em;
+}
+.footerlinks dd{
+	font-family: HUMANIST, Arial, Helvetica, sans-serif;
+	line-height: 1.2em;
+}
+.webtech dd{
+	font-family: HUMANIST, Arial, Helvetica, sans-serif;
+	line-height: 1.2em;
+	width: 190px;
+	float: left;
+}
+.clear{
+	clear: both;
+}
+/* End Footer */

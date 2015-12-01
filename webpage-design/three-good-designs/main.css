@@ -1,0 +1,126 @@
+body{
+background-color: #C9C0AE;
+}
+/* Layout */
+#wrapper{
+width: 960px;
+margin: 25px auto;
+border: 2px solid #72424E;
+}
+#header{
+height: 60px;
+background-color: #677E30;
+border-bottom: solid 2px #72424E;
+}
+#torso{
+height: 600px;
+}
+#main_navigation{
+width: 206px;
+height: 600px;
+float: left;
+text-align: center;
+background-color: #C7D6B9;
+border-right: solid 2px #72424E;
+}
+#content{
+width: 752px;
+height: 600px;
+float: right;
+text-align: center;
+background-color: #C7D6B9;
+}
+#footer{
+height: 27px;
+text-align: right;
+background-color: #677E30;
+border-top: solid 2px #72424E;
+padding-top: 10px;
+clear: both;
+}
+/* header */
+h1{
+text-align: center;
+padding: 15px 0;
+}
+/* <li> */
+li{
+font-family: arial, helvetica, sans-serif;
+color: #72424E;
+}
+#footer li{
+display: inline;
+border-right: solid 2px #72424E;
+padding: 10px 10px 10px 10px;
+font-size: 15px;
+color: #F2E28D;
+}
+li.images{
+display: inline;
+}
+/* <a> */
+a{
+font-family: arial, helvetica, sans-serif;
+text-decoration: none;
+}
+#main_navigation a{
+display: block;
+font-size: 18px;
+color: #72424E;
+background-image: url('images/sprite1.png');
+background-repeat: no-repeat;
+background-position: 0% 0%;
+padding: 15px 0px;
+}
+#main_navigation a.pressed{
+background-position: 0% 98%;
+color: #F2E28D;
+background-color: #677E30;
+}
+#main_navigation a.pressed:hover{
+color: white;
+background-position: 0% 98%;
+}
+#main_navigation a:hover {
+color: white;
+background-position: 0% 49%;
+}
+#main_navigation a:active {
+color: #72424E;
+}
+#header a{
+font-family: arial, helvetica, sans-serif;
+font-size: 50px;
+letter-spacing: 1px;
+font-style: italic;
+font-weight: 600;
+color: #F2E28D;
+}
+/* <img> */
+img{
+padding: 1px;
+border: solid 1px #72424E;
+margin: 10px;
+}
+#content > img{
+display: block;
+margin: 10px auto;
+}
+/* <p> */
+p{
+font-family: arial, helvetica, sans-serif;
+font-size: 17px;
+color: #333;
+margin: 5px 60px;
+text-align: left;
+}
+p.homepage{
+font-size: 19px;
+margin: 60px;
+line-height: 27px;
+}
+p.question{
+font-size: 19px;
+margin: 25px 60px;
+text-align: center;
+}

@@ -1,0 +1,696 @@
+/* Defaults */
+*{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+	color: #6d9d3c;
+}
+
+::selection{
+	background-color: #dfedd0 !important;
+}
+/* END Defaults */
+
+
+
+/* clear */
+.clearing{
+	clear: both;
+}
+/* Group Fix */
+.group:after{
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
+* html .group { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+/* ENDGroup Fix */
+
+
+
+html, body{
+	height: 100%;
+}
+
+html{
+	background: url(../img/light_wool.png) repeat;
+}
+
+#wrapper{
+	position: relative;
+	min-height: 100%;
+	max-width: 960px;
+	margin: 0px auto;
+}
+
+
+/* Scrollbar styling for Webkit*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+    background-color: white;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background-color: #DFEDD0;
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: #ACD373;
+}
+/* END Scrollbar styling for Webkit*/
+	
+
+/* Hidden details for hotkey use. */
+
+.details{
+	display: none;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	max-width: 700px;
+	padding: 10px 30px;
+	margin-left: 260px;
+
+	font-family: ColaborateLightRegular, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.4em;
+
+	background-color: #dfedd0;
+	border: dashed #6d9d3c;
+	border-width: 0 1px 1px 1px;
+
+	opacity: 0.7;
+}
+button{
+	width: 20px;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 10px;
+	background-color: #dfedd0;
+	border: 1px solid #6d9d3c;
+}
+
+/* END Hidden details for hotkey use. */
+
+
+/* Sidebar elements */
+/* header, nav, footer */
+#sidebar{
+	position: fixed;
+	width: 200px;
+	min-height: 100%;
+	
+	/*border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;*/
+	
+	background-color: #fff;
+	
+	-webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+	box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+header{
+	margin: 40px 0 0 0;
+	position: relative;
+	z-index: 1;
+	background-color: #fff;
+}
+
+header img{
+	display: block;
+	margin: 0px auto;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+header a>img{
+	opacity: 0.4;
+	-moz-opacity: 0.4;
+	filter:alpha(opacity=4);
+}
+
+header a:hover>img{
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=100);
+}
+
+header h4{
+	display: block;
+	margin: 30px 10px;
+	text-align: center;
+	font-size: 1.4em;
+	color: #555;
+	font-family: ColaborateLightRegular, Arial, Helvetica, sans-serif;
+	font-style: italic;
+}
+
+nav{
+	margin: 60px 0 0 0;
+	font-size: 1.2em;
+	position: relative;
+	z-index: 1;
+	background-color: #fff;
+}
+
+nav ul{
+	
+}
+
+nav a{
+	display: block;
+	color: #555;
+	font-family: ColaborateRegular, Arial, Helvetica, sans-serif;
+	margin: 0px 15px 0 15px;
+	padding: 10px 0 10px 0;
+	border-top: 1px solid #ddd;
+	text-indent: 10px;
+	
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.last{
+	border-bottom: 1px solid #ddd;
+}
+
+nav a:hover{
+	text-indent: 90px;
+}
+
+#currentpage{
+	text-indent: 90px;
+	color: #555;
+	text-shadow: 0 0 0px rgba(0,0,0,0.5);
+}
+
+footer{
+	margin: 0 0 0 15px;
+	position: fixed;
+	bottom: 20px;
+	z-index: 0;
+}
+
+footer p{
+	font-family: ColaborateRegular, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #999;
+	text-align: center;
+	margin: 10px 0 0 0;
+}
+
+footer ul{
+	text-align: center;
+}
+
+footer li{
+	display: inline-block;
+}
+
+.facebookicon, .twittericon, .linkedinicon, .instagramicon, .githubicon{
+	opacity: 0.4;
+	-moz-opacity: 0.4;
+	filter:alpha(opacity=4);
+	display: block;
+	width: 32px;
+	height: 32px;	
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.facebookicon:hover, .twittericon:hover, .linkedinicon:hover, .instagramicon:hover, .githubicon:hover{
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=100);
+}
+
+.githubicon{
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter:alpha(opacity=5);
+	background: url(../img/github-green.png) no-repeat;
+}
+.githubicon:hover{
+	background: url(../img/github.png) no-repeat;
+}
+
+.instagramicon{
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter:alpha(opacity=5);
+	background: url(../img/instagram-green.png) no-repeat;
+}
+
+.instagramicon:hover{
+	background: url(../img/instagram.png) no-repeat;
+}
+
+.linkedinicon{
+	background: url(../img/linkedin-green.png) no-repeat;
+}
+
+.linkedinicon:hover{
+	background: url(../img/linkedin.png) no-repeat;
+}
+
+.twittericon{
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter:alpha(opacity=5);
+	background: url(../img/twitter-green.png) no-repeat;
+}
+
+.twittericon:hover{
+	background: url(../img/twitter.png) no-repeat;
+}
+
+.facebookicon{
+	background: url(../img/facebook-green.png) no-repeat;
+}
+
+.facebookicon:hover{
+	background: url(../img/facebook.png) no-repeat;
+}
+/* END Sidebar elements */
+
+
+
+/* Main content area */
+#content{
+	max-width: 760px;
+	margin: 0 0 0 200px;
+	padding: 90px 0 50px 60px;
+	
+	color: #555;
+}
+/* Main content area */
+
+
+
+/* Portfolio page styling */
+article{
+	border: 1px solid #ddd;
+	border-width: 1px 0 0 0;
+	padding: 10px 0 10px 0;
+	clear: both;
+}
+
+article > a{
+	display: block;
+	float: left;
+	width: 400px;
+	height: 300px;
+	overflow: hidden;
+	margin: 0 40px 20px 0;
+	border: 3px solid #dfedd0;
+	-webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+	box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+article img{
+	
+}
+
+.hidden{
+	display: none;
+}
+
+article dl{
+	width: 260px;
+	float: left;
+	color: #555;
+	margin: 0 0 30px 0;
+}
+
+article dl dt{
+	font-family: ColaborateRegular, Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	margin: 0 0 15px 0;
+	border: 1px solid #ddd;
+	border-width: 0 0 1px 1px;
+	padding: 0 0 1px 2px;
+	display: inline-block;
+}
+
+article dl dt:nth-of-type(2){
+	margin-top: 25px;
+}
+
+article dl dd{
+	font-family: ColaborateThinRegular, Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.4em;
+	text-indent: 2px;
+}
+
+article dl dd a, .accordioncontent a{
+	font-family: ColaborateRegular, Arial, Helvetica, sans-serif;
+	color: #6d9d3c;
+	text-indent: 2px;
+	line-height: 1.4em;
+}
+/* END Portfolio page styling */
+
+
+
+/* Accordion styling*/
+.accordionbutton {	
+	max-width: 100%;
+	cursor: pointer;
+	clear: both;
+}
+.accordionbutton > span{
+	display: block;
+	float: right;
+}
+.accordioncontent {	
+	max-width: 100%;
+	font-size: 0.9em;
+}
+
+.on {
+	font-style: italic;
+	background-color: #dfedd0;
+}
+	
+.over {
+	font-style: italic;
+	background-color: #dfedd0;
+}
+/* END Accordion styling*/
+
+
+
+/* Some typography settings */
+#content h1{
+	font-family: ColaborateRegular, Arial, Helvetica, sans-serif;
+	font-size: 2.4em;
+	margin: 0 0 60px 0;
+}
+
+#content h2{
+	font-family: ColaborateMediumRegular, Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	margin: 0 0 30px 0;
+}
+
+#content h3{
+	font-family: ColaborateRegular, Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+
+#content p{
+	font-family: ColaborateLightRegular, Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	margin: 10px 0;
+}
+
+#content a:hover{
+	text-decoration: underline;
+}
+
+.italicparagraph{
+	font-family: ColaborateLightRegular, Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	font-style: italic;
+}
+
+.homepageparagraph{
+	margin: 40px 0 0 0 !important;
+	padding: 0 0 0 20px;
+}
+
+.arrow{
+	font-size: 1.4em;
+}
+/* END Some typography settings */
+
+
+
+/* Contact form */
+.contactformbutton input[type="submit"] {
+	background:url(../contact/contact_files/img/email.png) no-repeat 0% 50%;
+	border:1px;
+	border-color:#0C0;
+	text-indent:35px;
+	padding: 10px 8px;
+	cursor: pointer;
+	opacity: 0.6;
+	-moz-opacity: 0.6;
+	filter:alpha(opacity=6);
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.contactformbutton input[type="submit"]:hover {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=1);
+}
+
+.contactformbutton input[type="reset"] {
+	background:url(../contact/contact_files/img/error.png) no-repeat 0% 50%;
+	border:1px;
+	border-color:#0C0;
+	text-indent:32px;
+	padding: 10px 8px;
+	cursor: pointer;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter:alpha(opacity=5);
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.contactformbutton input[type="reset"]:hover {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=1);
+}
+
+.contactformbutton input, .contactformbutton textarea, .contactformbutton select { border: 1px solid #add65b; }
+.contactformbutton input[type="radio"] { border: none; }
+.contactformbutton input:focus, .contactformbutton textarea:focus { border: 1px dashed #add65b; }
+.contactformbutton input.error, .contactformbutton textarea.error { border: 1px dashed #F93; }
+form.contactme label {
+	display: inline-block;
+	width:120px;
+	line-height: 1.8em;
+	vertical-align: top;
+	cursor: hand;
+	color: #555;
+}
+
+/*-------------------------------------------------------------------*/
+.contactformbutton{
+
+}
+
+fieldset{
+	width: auto;
+	border: 1px solid #ddd;
+	border-width: 1px 0 1px 0;
+}
+
+legEND{
+	font-family: ColaborateMediumRegular, Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+}
+
+label{
+	font-size: 1em;
+}
+
+label.error{
+	font-size: 0.8em;
+	color: #df5b00 !important;
+}
+
+input, textarea{
+	font-family: ColaborateLightRegular, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #555;
+	margin: 0 20px 0 0;
+}
+
+#fname, #email{
+	width: 300px;
+}
+
+#captcha{
+	width: 30px;
+	margin-bottom: 20px;
+}
+
+textarea{
+	width: 300px;
+	height: 120px;
+}
+
+#results{
+	font-family: ColaborateLightRegular, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	margin: 10px 0;
+}
+/* END Contact form */
+
+
+
+/* Homepage image styling */
+.myface{
+	display: block;
+	opacity: 0.6;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+	/* Add image caption - by Chris Coyier */
+	/* http://css-tricks.com/slide-in-image-captions/ */
+	figure {
+		float: right;
+		display: block;
+		position: relative;
+		overflow: hidden;
+
+		margin: 0 0 30px 30px;
+		border: 3px solid #dfedd0;
+		-webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+		box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+	}
+
+	figcaption {
+		font-family: ColaborateLightRegular, Arial, Helvetica, sans-serif;
+		font-size: 1.2em;
+
+		position: absolute;
+		background: rgba(0,0,0,0.75);
+		color: white;
+		padding: 10px 20px;
+		width: 100%;
+
+		opacity: 0;
+		bottom: 0;
+		left: -30%;
+		-webkit-transition: all 600ms ease;
+		-moz-transition: all 600ms ease;
+		-ms-transition: all 600ms ease;
+		-o-transition: all 600ms ease;
+		transition: all 600ms ease;
+	}
+	figure:hover figcaption {
+		opacity: 1;
+		left: 0;
+	}
+	.cap-bot figcaption { left: 0; bottom: -30%;}
+	.cap-bot:hover figcaption { bottom: 0; }
+	.cap-bot:hover .myface { opacity: 1; }
+	.cap-bot:before {  bottom: 10px; right: 10px; }
+	figure:before {
+		content: "i";
+		position: absolute;
+		background: rgb(223, 237, 208, 0.75);
+		color: black;
+		width: 24px;
+		height: 24px;
+		border: 1px solid black;
+		-webkit-border-radius: 12px;
+		-moz-border-radius:    12px;
+		border-radius:         12px;
+		text-align: center;
+		font-family: ColaborateBoldRegular, Arial, Helvetica, sans-serif;
+		font-size: 1.2em;
+		line-height: 1.4em;
+		/* Only Fx 4 supporting transitions on psuedo elements so far... */
+		-webkit-transition: all 600ms ease;
+		-moz-transition: all 600ms ease;
+		-ms-transition: all 600ms ease;
+		-o-transition: all 600ms ease;
+		transition: all 600ms ease;
+		opacity: 1;
+	}
+	figure:hover:before {
+		opacity: 0;
+	}
+/* END Homepage image styling */
+
+
+
+/* Playful text effects */
+.effects{
+	display: inline-block;
+
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+
+.effects:hover{
+	-moz-transform: scale(1) rotate(0deg) translate(0px, -7px) skew(0deg, 0deg);
+	-webkit-transform: scale(1) rotate(0deg) translate(0px, -7px) skew(0deg, 0deg);
+	-o-transform: scale(1) rotate(0deg) translate(0px, -7px) skew(0deg, 0deg);
+	-ms-transform: scale(1) rotate(0deg) translate(0px, -7px) skew(0deg, 0deg);
+	transform: scale(1) rotate(0deg) translate(0px, -7px) skew(0deg, 0deg);
+	color: #6d9d3c;
+}
+/* END Playful text effects */
+
+
+
+/* Blurry text effect by Chris Coyier */
+/* http://css-tricks.com/snippets/css/blurry-text/ */
+.blur{
+	color: rgba(0,0,0,1); /* makes it transparent */
+   	text-shadow: 0 0 1px rgba(0,0,0,0.5);
+	
+   	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.blur:hover{
+	color: #555;
+	text-shadow: 0 0 0px rgba(0,0,0,0);
+}
+/* END Blurry text*/

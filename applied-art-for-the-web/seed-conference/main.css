@@ -1,0 +1,125 @@
+*{
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		transition: all 1s;
+		-webkit-transition: all 1s;
+}
+body{	
+		font-family: sans-serif;
+		font-size: 0.9em;
+		line-height: 1.4em;
+		background-color: #ddd;
+		color: #444;
+}
+#container{
+		margin: -1px auto;
+		width: 900px;
+		padding: 50px 80px;
+		border-left: 3px #629000 double;
+		border-right: 3px #629000 double;
+		background-color: #fff;
+		box-shadow: 0px 0px 15px 0px #888;
+		-webkit-box-shadow: 0px 0px 15px 0px #888;
+		-moz-box-shadow: 0px 0px 15px 0px #888;
+		-o-box-shadow: 0px 0px 15px 0px #888;
+}
+a{
+		color: #629000;
+		text-decoration: none;
+		text-align: right;
+}
+a:hover{
+		text-decoration: underline overline;
+}
+
+.caps{
+		font-variant: small-caps;
+		font-size: 1.25em;
+		text-align: center;
+}
+.eyebrow{
+		text-align: center;
+		font-style: italic;
+		font-size: 1.2em;
+		margin: 10px 0px;
+}
+.grey{
+		color: #888;
+		font-weight: bold;
+		font-size: 1.2em;
+}
+#line{	
+		width: 500px;
+		height: 25px;
+		border-bottom: 3px #629000 solid;
+		margin: 20px auto 60px auto;
+		border-radius: 100%;
+
+}
+.woodfour{
+		font-size: 2.8em;
+		text-align: center;
+		margin: 20px 0px;
+}
+.lede{
+		font-size: 1.4em;
+		letter-spacing: 0.09em;
+}
+i{
+		font-style: italic;
+		color: #865;
+}
+b{
+		font-weight: bold;
+}
+.woodone{
+		font-size: 3em;
+		text-align: center;
+		margin: 20px 0px;
+		letter-spacing: 0.1em;
+		font-weight: bold;
+		text-shadow: 0px 0px 3px #629000;
+}
+.copyone{
+		font-size: 0.9em;
+		text-align: center;
+}
+#break{
+		margin: 30px 0px;
+}
+.woodtwo{
+		font-size: 2.85em;
+		text-align: center;
+		line-height: 1.4em;
+}
+#sked{	
+		displa: inline-blick;
+		width: 368px;
+		border-left: 1px solid #629000;
+		border-right: 1px solid #629000;
+		float: left;
+		padding: 0 30px;
+		margin-left: -1;
+		margin-bottom: 20px;
+		font-size: 1.1em;
+		line-height: 1.3em;
+}
+#skeda, #skedb, #skedc{
+		margin: 20px 0;
+}
+
+.copytwo{
+		text-align: center;
+		font-size: 0.8em;
+		margin-top: 20px;
+		clear: both;
+}
+.woodthree{
+		font-size: 2.6em;
+		text-align: center;
+		line-height: 1em;
+}
+img{
+		display: block;
+		margin: 0 auto;
+}
